@@ -1,0 +1,197 @@
+html{
+      scroll-behavior: smooth !important;
+}
+body::before{
+     content: "";
+     display: block;
+     height:30px;
+}
+:root{
+      --first-font:'Abel', sans-serif;
+      --second-font:'Crimson Text', serif;
+      --third-font:'Montserrat', sans-serif;
+      --fourth-font:'Rajdhani', sans-serif;
+}
+       
+/* ___________header __________*/
+header{
+      height: 75vh;
+      font-family: var(--fourth-font);
+      background: linear-gradient(to right,#112311,#223829,#223829,#234232 );
+}
+@media (max-width:1024px){
+      header{
+            height: auto;
+      }
+}
+.showcase-items{
+      justify-content: flex-end;
+}
+
+.cust-showcase .showcase-text{
+      flex-basis: 80%;
+      animation: slideInFromBottom 1.5s ease-in-out;
+} 
+
+.showcase-text ul li{
+      list-style: square;
+}
+
+.showcase-text a{
+      background: #9d0208;
+      color: white;
+      box-shadow: none !important;
+      transition: all 1s !important;
+}
+.showcase-text a:hover{
+      font-weight: bold;
+      background: #ff9e00 !important;
+      color: black !important;
+}
+.showcase-text{
+      border-left:1px solid white ;
+}
+
+
+
+
+/* ___________nav __________*/
+nav{
+      font-family: var(--fourth-font);
+      background: linear-gradient(to right,#112311, #223829,#223829,#234232 );
+}
+nav:hover{
+      color: white;
+}
+nav .logo{
+      color:#f6fff8 !important;
+      animation:slideInFromLeft 1.5s ease-in-out ;
+}
+.navbar-toggler{
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+}
+/*______________ boxes ______________*/
+.cust-box{
+      /* font-family: var(--third-font); */
+      animation:slideInFromBottom  1s ease-in-out;
+}
+.cust-box .row  .col-md .cust-box-crd  i {
+    color:#223829 ;
+}
+.cust-box .row  .col-md .cust-box-crd  a{
+      color: #0a8b0a;
+}
+.cust-box .row  .col-md .cust-box-crd h5{
+      font-family: var(--fourth-font);
+}
+
+/* _____________screenshot________________ */
+.cust-screen{
+      background: linear-gradient(to right,#112311, #223829,#223829,#234232) !important;
+      font-family: var(--fourth-font);
+}
+.carousel inner{
+      background: linear-gradient(to right,#112311, #223829,#223829,#234232) !important;
+}
+.carousel-inner img{
+      height: 550px;
+      width: 280px;
+}
+
+/* ______support __________*/
+.cust-support{
+      font-weight: 800 !important;
+      font-family: var(--fourth-font);
+
+}
+
+form .row input{
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #0a8b0a !important;
+      color: black !;
+      font-family: var(--first-font) !important;
+      font-weight: 500 !important;
+}
+form .row textarea{
+      border: none;
+      outline: none;
+      color: black !;
+      font-family: var(--first-font) !important;
+      font-weight: 500 !important;
+}
+.cu-send-bt{
+      transition:all 0.5s !important;
+      border: 1px solid #0a8b0a  !important;
+}
+.cu-send-bt:hover{
+      background: #112311;
+      color: white !important;
+}
+
+
+
+/* _____footer_______ */
+footer{
+      font-family: var(--fourth-font);
+      background: linear-gradient(to right,#112311, #223829,#223829,#234232 );
+}
+.foot-icn a{
+      color:white  !important;
+}
+
+footer .container .foot-icn a:hover {
+      color: #e06936 !important;
+}
+
+footer .container a{
+      color: #9d0208;
+}
+
+
+
+
+/*_______ Animation ________________*/
+
+
+@keyframes slideInFromLeft{
+     0%{
+          transform: translateX(-50%);
+     }
+     100%{
+          transform: translateX(0);
+     }
+}
+
+@keyframes slideInFromBottom{
+     0%{
+          transform: translateY(20%);
+     }
+     100%{
+          transform: translateX(0);
+     }
+}
+
+
+@keyframes slideInFromRight{
+     0%{
+          transform: translateX(100%);
+     }
+     100%{
+          transform: translateX(0);
+     }
+}
+@keyframes slideInFromTop{
+     0%{
+          transform: translateY(-20%);
+     }
+     100%{
+          transform: translateX(0);
+     }
+}
+
+
+
+
